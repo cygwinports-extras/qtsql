@@ -1,0 +1,13 @@
+inherit qt3
+
+DESCRIPTION="Qt SQL browser"
+HOMEPAGE="http://www.mobiustech.net/qtsql/"
+SRC_URI="http://www.mobiustech.net/qtsql/${PN}.tar.gz"
+SRC_DIR="${PN}"
+
+src_install() {
+	cd ${B}
+	dobin qtsql.exe
+	newicon database.xpm qtsql.xpm
+	make_desktop_entry ${PN} QtSQL ${PN} "Office;Database;Qt"
+}

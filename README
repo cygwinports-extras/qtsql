@@ -1,0 +1,61 @@
+qtsql
+------------------------------------------
+The purpose of this project is to provide a simple, generic GUI database 
+browsing frontend. The tool is a very simple aggregation of the Qt 
+database classes. The database abstraction is provided by the Qt 
+database drivers. So far, the drivers for PostgreSQL and MySQL have been 
+found to work well.
+
+Runtime requirements:
+  cygwin-1.5.24-1
+  qt3-3.3.7-1
+
+Build requirements:
+  cygwin-1.5.24-1
+  binutils-20060817-1
+  cygport-0.2.11-1
+  gcc-core-3.4.4-3
+  gcc-g++-3.4.4-3
+  make-3.81-1
+  qt3-devel-3.3.7-1
+
+Canonical website:
+  http://www.mobiustech.net/qtsql/
+
+Canonical download:
+  http://www.mobiustech.net/qtsql/
+
+-------------------------------------------
+
+Build instructions:
+  unpack qtsql-0.85-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./qtsql-0.85-X.cygport all
+
+This will create:
+  /usr/src/qtsql-0.85-X-src.tar.bz2
+  /usr/src/qtsql-0.85-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/qtsql.exe
+  /usr/share/applications/qtsql.desktop
+  /usr/share/doc/Cygwin/qtsql-0.85.README
+  /usr/share/doc/qtsql-0.85/INSTALL.txt
+  /usr/share/doc/qtsql-0.85/LICENSE.txt
+  /usr/share/pixmaps/qtsql.xpm
+
+------------------
+
+Port Notes:
+
+----- version 0.85-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
