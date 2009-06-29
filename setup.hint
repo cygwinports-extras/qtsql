@@ -1,5 +1,5 @@
 category: KDE Database
-requires: cygwin qt3
+requires: qt3
 sdesc: "Qt SQL Browser"
 ldesc: "The purpose of this project is to provide a simple, generic GUI 
 database browsing frontend. The tool is a very simple aggregation of the 
