@@ -1,0 +1,23 @@
+inherit qt3-qmake
+
+NAME="qtsql"
+VERSION=20050103
+RELEASE=1
+CATEGORY="Database"
+SUMMARY="Qt SQL Browser"
+DESCRIPTION="The purpose of this project is to provide a simple, generic GUI
+database browsing frontend. The tool is a very simple aggregation of the Qt
+database classes. The database abstraction is provided by the Qt database
+drivers. So far, the drivers for PostgreSQL and MySQL have been found to work
+well."
+HOMEPAGE="http://www.mobiustech.net/qtsql/"
+SRC_URI="http://www.mobiustech.net/qtsql/${NAME}.tar.gz"
+SRC_DIR=${NAME}
+PATCH_URI="20050103-gcc43.patch"
+
+src_install() {
+	cd ${B}
+	dobin qtsql.exe
+	newicon database.xpm qtsql.xpm
+	make_desktop_entry ${PN} QtSQL ${PN} "Office;Database;Qt"
+}

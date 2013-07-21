@@ -1,0 +1,20 @@
+--- origsrc/qtsql/connectiontool.ui	2005-02-22 09:07:17.000000000 -0600
++++ src/qtsql/connectiontool.ui	2013-07-21 12:47:04.706844700 -0500
+@@ -304,6 +304,7 @@
+     <include location="global" impldecl="in declaration">qfile.h</include>
+     <include location="global" impldecl="in declaration">qdom.h</include>
+     <include location="global" impldecl="in declaration">qmessagebox.h</include>
++    <include location="global" impldecl="in declaration">cstdlib</include>
+     <include location="global" impldecl="in declaration">iostream</include>
+     <include location="global" impldecl="in declaration">qsqldatabase.h</include>
+     <include location="local" impldecl="in implementation">connectiontool.ui.h</include>
+--- origsrc/qtsql/qtsql.ui	2005-02-22 09:07:17.000000000 -0600
++++ src/qtsql/qtsql.ui	2013-07-21 12:47:32.964461000 -0500
+@@ -445,6 +445,7 @@
+     </connection>
+ </connections>
+ <includes>
++    <include location="global" impldecl="in declaration">cstdlib</include>
+     <include location="global" impldecl="in declaration">qsqldatabase.h</include>
+     <include location="global" impldecl="in declaration">qsqlrecord.h</include>
+     <include location="local" impldecl="in declaration">typemap.h</include>

@@ -1,8 +1,0 @@
-category: KDE Database
-requires: qt3
-sdesc: "Qt SQL Browser"
-ldesc: "The purpose of this project is to provide a simple, generic GUI 
-database browsing frontend. The tool is a very simple aggregation of the 
-Qt database classes. The database abstraction is provided by the Qt 
-database drivers. So far, the drivers for PostgreSQL and MySQL have been 
-found to work well."
